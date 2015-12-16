@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:form-builder',
-  version: '0.0.2',
+  version: '0.1.0',
   summary: 'Form builder that creates storable dehyrated schemas that can be rehydrated and used with Autoforms.',
   git: 'https://github.com/clinical-meteor/clinical-form-builder',
   documentation: 'README.md'
@@ -36,6 +36,7 @@ Package.onUse(function (api) {
   api.addFiles('client/components/builderPage/builderPage.js', 'client');
   api.addFiles('client/components/builderPage/builderPage.less', 'client');
 
+  api.export('FormBuilder');
   api.export('WestPanel');
   api.export('Items');
 });
