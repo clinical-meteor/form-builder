@@ -48,6 +48,9 @@ Router.route('/builder', {
     'navbarFooter': {
       to: 'footer'
     },
+    'formBuilderPanel': {
+      to: 'westPanel'
+    },
     'builderActionButtons': {
       to: 'footerActionElements'
     }

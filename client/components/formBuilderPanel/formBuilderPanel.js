@@ -1,6 +1,6 @@
 var seed = new Meteor.Collection.ObjectID();
 
-Session.setDefault("formBuilderPanelVisible", false);
+Session.setDefault("formBuilderPanelVisible", true);
 
 Session.setDefault('selectedBuilderTab', 'addNewFieldTab');
 Session.setDefault('seed', new Meteor.Collection.ObjectID());
