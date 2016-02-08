@@ -20,10 +20,10 @@ Router.route('/builder/:questionnaireId', {
     Session.set('activeQuestionnaireId', this.params.questionnaireId);
   },
   yieldTemplates: {
-    'navbarHeader': {
+    'defaultNavbarHeader': {
       to: 'header'
     },
-    'navbarFooter': {
+    'defaultNavbarFooter': {
       to: 'footer'
     },
     'builderActionButtons': {
@@ -42,10 +42,10 @@ Router.route('/builder', {
     WestPanel.show();
   },
   yieldTemplates: {
-    'navbarHeader': {
+    'defaultNavbarHeader': {
       to: 'header'
     },
-    'navbarFooter': {
+    'defaultNavbarFooter': {
       to: 'footer'
     },
     'formBuilderPanel': {
