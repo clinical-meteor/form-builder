@@ -195,9 +195,9 @@ Template.formBuilderPanel.helpers({
   },
   getWestPanelStyle: function (){
     if (Session.get("formBuilderPanelVisible")) {
-      return "visibility: visible; left: 0px;";
+      return "visibility: visible; left: 0px; background-color: white;";
     } else {
-      return "visibility: hidden; left: -300px;";
+      return "visibility: hidden; left: -300px; background-color: white;";
     }
   },
   getMultiSelectValue: function () {

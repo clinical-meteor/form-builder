@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:form-builder',
-  version: '0.1.4',
+  version: '0.1.7',
   summary: 'Form builder that creates storable dehyrated schemas that can be rehydrated and used with Autoforms.',
   git: 'https://github.com/clinical-meteor/clinical-form-builder',
   documentation: 'README.md'
