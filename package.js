@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:form-builder',
-  version: '0.1.7',
+  version: '0.1.9',
   summary: 'Form builder that creates storable dehyrated schemas that can be rehydrated and used with Autoforms.',
   git: 'https://github.com/clinical-meteor/clinical-form-builder',
   documentation: 'README.md'
@@ -11,6 +11,7 @@ Package.onUse(function (api) {
 
   api.use('meteor-platform');
   api.use('jquery');
+  api.use('mongo');
   api.use('session@1.1.0');
   api.use('grove:less@0.1.1');
 
@@ -21,6 +22,8 @@ Package.onUse(function (api) {
 
   api.addFiles('lib/SimpleRationalRanks.js');
   api.addFiles('lib/Items.js');
+  api.addFiles('lib/Forms.js');
+  api.addFiles('lib/Metadata.js');
   api.addFiles('lib/FormBuilder.js');
   api.addFiles('lib/WestPanel.js', 'client');
 
@@ -35,10 +38,12 @@ Package.onUse(function (api) {
   api.addFiles('client/components/builderPage/builderPage.html', 'client');
   api.addFiles('client/components/builderPage/builderPage.js', 'client');
   api.addFiles('client/components/builderPage/builderPage.less', 'client');
-
+  
   api.export('FormBuilder');
   api.export('WestPanel');
   api.export('Items');
+  api.export('Metadata');
+  api.export('Forms');
 });
 
 Package.onTest(function (api) {

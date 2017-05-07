@@ -34,7 +34,13 @@
 //   }
 // });
 
-
+Template.registerHelper('isInput', function () {
+  if (this.autoform.elementType === "input") {
+    return true;
+  } else {
+    return false;
+  }
+});
 Template.registerHelper('isTextBlock', function () {
   if (this.autoform.elementType === "paragraph") {
     return true;
