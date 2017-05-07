@@ -28,7 +28,7 @@ describe('clinical:form-builder', function () {
       var item = Items.findOne();
 
       expect(item.formElementId).to.equal("textInputBlock");
-      expect(item.elementType).to.equal("text");
+      expect(item.elementType).to.equal("input");
       expect(item.rank).to.equal(0);
       expect(item.schemaTemplate.type).to.equal("String");
       expect(item.schemaTemplate.autoform.afFieldInput.type).to.equal("text");
